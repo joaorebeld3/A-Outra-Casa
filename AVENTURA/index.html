@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <title>A Outra Casa - Mistério e Aventura</title>
+</head>
+<body>
+    <main>
+        
+        <div class="passo ativo" id="passo-0">
+            <h1>A Outra Casa</h1>
+            <p>Você se mudou para uma casa nova e, no meio de uma tarde chata, encontrou uma porta escondida. Curioso, você abre e dá de cara com uma versão estranha da sua casa... mas bem mais sinistra.</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na outra casa</button>
+            <button class="btn-proximo" data-proximo="2">Ignorar a porta</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide entrar e, de repente, é recebido por uma mulher com botões no lugar dos olhos. Ela se chama "Outra Mãe" e diz que essa casa é um lugar muito especial.</p>
+            <button class="btn-proximo" data-proximo="3">Falar com a Outra Mãe</button>
+            <button class="btn-proximo" data-proximo="4">Explorar a casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você decide não dar bola para a porta secreta e segue com sua vida, mas... algo dentro de você não para de pensar naquela casa. Será que você deveria ter entrado?</p>
+            <button class="btn-proximo" data-proximo="1">Voltar para a porta</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>A "Outra Mãe" começa a te falar sobre como tudo aqui é perfeito e como você pode ter tudo o que sempre quis... mas, para isso, precisa trocar seus olhos por botões. O que você vai fazer?</p>
+            <button class="btn-proximo" data-proximo="5">Aceitar o pacto</button>
+            <button class="btn-proximo" data-proximo="6">Recusar e sair daqui</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você começa a andar pela casa e logo percebe que as coisas são bem mais estranhas do que parecem. Os brinquedos se movem sozinhos e as portas abrem e fecham como se estivessem com vida.</p>
+            <button class="btn-proximo" data-proximo="7">Investigar os brinquedos</button>
+            <button class="btn-proximo" data-proximo="8">Explorar o jardim esquisito</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Você decide aceitar o pacto. Seus olhos são trocados por botões, e você começa a perceber que algo não está certo. A casa agora parece diferente... e a "Outra Mãe" também.</p>
+            <button class="btn-proximo" data-proximo="9">Explorar o "mundo perfeito"</button>
+            <button class="btn-proximo" data-proximo="10">Tentar fugir antes que seja tarde</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Você recusa o pacto, mas isso faz a "Outra Mãe" ficar bem brava. O clima na casa muda e você começa a perceber que não vai ser fácil sair de lá.</p>
+            <button class="btn-proximo" data-proximo="10">Tentar escapar da casa</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Os brinquedos começam a se mexer sozinhos e, de repente, um ursinho de pelúcia começa a falar com você, dizendo que é melhor sair logo antes que as coisas piorem.</p>
+            <button class="btn-proximo" data-proximo="11">Fugir com o ursinho</button>
+            <button class="btn-proximo" data-proximo="8">Ir para o jardim</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>O jardim é estranho, as plantas parecem ter vida própria e, ao tocar uma flor, você sente como se estivesse sugando sua energia. Melhor sair antes que algo pior aconteça.</p>
+            <button class="btn-proximo" data-proximo="10">Fugir do jardim</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>O "mundo perfeito" que a Outra Mãe falou não é nada disso. Tudo parece forçado e os outros ao seu redor têm botões no lugar dos olhos. Isso não pode ser bom.</p>
+            <button class="btn-proximo" data-proximo="10">Tentar escapar desse lugar</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Você tenta fugir, mas a casa começa a se mover, como se tivesse vida própria. A "Outra Mãe" aparece na sua frente e seu sorriso fica cada vez mais ameaçador.</p>
+            <button class="btn-proximo" data-proximo="11">Enfrentar a Outra Mãe</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Infelizmente, a casa te pega. Você nunca mais será visto, mas a "Outra Mãe" vai continuar esperando por quem mais cair nessa armadilha...</p>
+        </div>
+        
+        
+        <div class="texto-final" id="texto-final">
+            <p>A mãe de Coraline nunca conseguiu vê-la novamente...</p>
+        </div>
+    </main>
+
+    
+    <div id="flash"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

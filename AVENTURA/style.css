@@ -1,0 +1,137 @@
+
+body {
+    background-color: #1e1e2f;  
+    color: #ddd;  
+    font-family: 'Spectral SC', serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 400px;
+    border: 5px solid #ff66b2; 
+    padding: 20px;
+    background-color: rgba(10, 10, 30, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.6);  
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+h1, h2, p {
+    color: #ff66b2; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);  
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+button {
+    background-color: #9c2b8c; 
+    color: white;
+    font-family: 'Fruktur', cursive; 
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 178, 0.7);
+}
+
+
+button:hover {
+    background-color: #7c1e6b; 
+    box-shadow: 0 0 15px rgba(255, 0, 178, 0.9);
+}
+
+
+.passo {
+    display: none;
+}
+
+
+.passo.ativo {
+    display: block;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/coraline-cinemas.png?w=1200&h=900&crop=1') no-repeat center center / cover;  /* Imagem de fundo */
+    opacity: 0.15;  
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 0, 178, 0.5); 
+}
+
+#flash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 100;
+    display: none;
+    pointer-events: none;
+    animation: flashAnimation 0.5s infinite alternate;  
+}
+
+
+@keyframes flashAnimation {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.texto-final {
+    display: none;
+    font-size: 24px;
+    font-family: 'Fruktur', sans-serif;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeOut 5s ease-in-out;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
